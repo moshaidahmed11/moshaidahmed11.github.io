@@ -1,12 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
+    <table <style>width =200px"</style>
+        <thead>
+            <th>id</th>
+            <th>name</th>
+            <th>color</th>
+            <th>price</th>
+            <tbody id = "tbody">
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-
+            </tbody>
+        </thead>
+    </table>
 </body>
+<script>
+    const dress =[
+    {
+    "id": 10,
+    "name": "shirt",
+    "color": "red",
+    "price": "$123"
+    },
+    {
+    "id": 11,
+    "name": "shirt",
+    "color": "black",
+    "price": "$230"
+    },
+    {
+    "id": 13,
+    "name": "shirt",
+    "color": "green",
+    "price": "$210"
+    },
+    {
+    "id": 14,
+    "name": "shirt",
+    "color": "blue",
+    "price": "$110"
+    },
+    {
+    "id": 15,
+    "name": "shirt",
+    "color": "yellow",
+    "price": "$160"
+    },
+    {
+    "id": 16,
+    "name": "coat",
+    "color": "red",
+    "price": "$1230"
+    },
+    {
+    "id": 17,
+    "name": "coat",
+    "color": "black",
+    "price": "$2300"
+    },
+    {
+    "id": 18,
+    "name": "coat",
+    "color": "green",
+    "price": "$2100"
+    },
+    {
+    "id": 19,
+    "name": "coat",
+    "color": "blue",
+    "price": "$1100"
+    },
+    {
+    "id": 20,
+    "name": "coat",
+    "color": "yellow",
+    "price": "$1600"
+    },
+    {
+    "id": 21,
+    "name": "sari",
+    "color": "red",
+    "price": "$1230"
+    },
+    {
+    "id": 22,
+    "name": "sari",
+    "color": "black",
+    "price": "$2300"
+    },
+    {
+    "id": 23,
+    "name": "sari",
+    "color": "green",
+    "price": "$2100"
+    },
+    {
+    "id": 24,
+    "name": "sari",
+    "color": "blue",
+    "price": "$1100"
+    },
+    {
+    "id": 25,
+    "name": "sari",
+    "color": "yellow",
+    "price": "$1600"
+    },
+    {
+    "id": 26,
+    "name": "tops",
+    "color": "red",
+    "price": "$1230"
+    },
+    {
+    "id": 27,
+    "name": "tops",
+    "color": "black",
+    "price": "$2300"
+    },
+    {
+    "id": 28,
+    "name": "tops",
+    "color": "green",
+    "price": "$2100"
+    },
+    {
+    "id": 29,
+    "name": "tops",
+    "color": "blue",
+    "price": "$1100"
+    },
+    {
+    "id": 30,
+    "name": "tops",
+    "color": "yellow",
+    "price": "$1600"
+    },
+    {
+    "id": 31,
+    "name": "shoe",
+    "color": "red",
+    "price": "$1230"
+    },
+    {
+    "id": 32,
+    "name": "shoe",
+    "color": "black",
+    "price": "$2300"
+    },
+    {
+    "id": 33,
+    "name": "shoe",
+    "color": "green",
+    "price": "$2100"
+    },
+    {
+    "id": 34,
+    "name": "shoe",
+    "color": "blue",
+    "price": "$1100"
+    },
+    {
+    "id": 35,
+    "name": "shoe",
+    "color": "yellow",
+    "price": "$1600"
+    }
+]
+
+
+buildTable(dress);
+function buildTable(data){
+    var table =document.getElementById("tbody");
+    for(var i=0;i<dress.length;i++){
+        var row =`
+        <tr>
+            <td>${data[i].id}</td>
+            <td>${data[i].name}</td>
+            <td>${data[i].color}</td>
+            <td>${data[i].price}</td>
+
+            </tr>`
+            table.innerHTML += row;
+
+    }
+}
+</script>
+
 </html>
